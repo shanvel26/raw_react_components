@@ -1,0 +1,45 @@
+/* src/Tabs.css */
+.tabs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  width: 300px; /* Adjust based on your need */
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 33.33%; /* Since there are 3 tabs */
+  background-color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.content {
+  width: 100%;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
