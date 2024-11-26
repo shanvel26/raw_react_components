@@ -1,0 +1,61 @@
+.autocomplete {
+  position: relative;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.input-container {
+  position: relative;
+}
+
+input[type='text'] {
+  width: calc(100% - 30px);
+  padding: 10px;
+  font-size: 16px;
+}
+
+.clear-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button:focus {
+  outline: none;
+}
+
+.clear-button:focus svg {
+  color: #333;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: calc(100% - 2px);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover,
+.suggestions li.focused {
+  background-color: #f0f0f0;
+}
