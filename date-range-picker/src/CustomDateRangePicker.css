@@ -1,0 +1,63 @@
+/* src/CustomDateRangePicker.css */
+.date-range-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.days-of-week {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 5px 0;
+}
+
+.day-of-week {
+  flex: 1;
+  text-align: center;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.day {
+  width: 14.28%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.day.in-range {
+  background-color: #d0e7ff;
+}
+
+.day.empty {
+  background-color: #f4f4f4;
+  cursor: default;
+}
+
+.selected-dates {
+  margin-top: 10px;
+}
